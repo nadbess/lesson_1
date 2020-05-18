@@ -1,0 +1,10 @@
+my_f = open('task_4.txt')
+new_f = open('task_4_2.txt', 'w')
+for line in my_f:
+    line = line.replace('One', 'Один')
+    line = line.replace('Two', 'Два')
+    line = line.replace('Three', 'Три')
+    line = line.replace('Four', 'Четыре')
+    new_f.write(line)
+my_f.close()
+new_f.close()
